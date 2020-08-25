@@ -79,6 +79,19 @@ public function boot()
 }
 
 ````
+Acesse o terminal e crie um usuário com o tinker;
+````
+$ php artisan tinker
+>>> factory(\App\User::class)->create();
+>>> exit
+````
+Iniciar o servidor de desenvolvimento em: `http://localhost:8000`
+````
+$ php artisan serve
+````
+Abra o Postman ou similiar para fazer os devidos testes.
+
+
 
 Se você está executando a API do Laravel em um caminho de URL diferente da `http://127.0.0.1:8000`, então você precisa atualizar o caminho do URL no `src/apis/Api.js` do Vue.js app.
 
